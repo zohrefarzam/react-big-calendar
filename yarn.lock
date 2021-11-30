@@ -13593,10 +13593,10 @@
     "magic-string" "^0.25.2"
     "rollup-pluginutils" "^2.6.0"
 
-"rollup-plugin-size-snapshot@^0.8.0":
-  "integrity" "sha512-Hb1u15UY5diVjpY2hItjhBjtAQv3O5s24FpyGMLlsxztxqT3mTwz1ArWI0YNxZMUGa1YTr9lrf11YQXC/BeVQQ=="
-  "resolved" "https://registry.npmjs.org/rollup-plugin-size-snapshot/-/rollup-plugin-size-snapshot-0.8.0.tgz"
-  "version" "0.8.0"
+"rollup-plugin-size-snapshot@^0.9.0":
+  "integrity" "sha512-qTCZ1T0YiJrSzPc9nIsxwtSQBNx/kvEorUCiYwnNAnBh6v2xRQkvqWwFcJo0DDuN3tQh5F+5UTR9dAWgeas0iw=="
+  "resolved" "https://registry.npmjs.org/rollup-plugin-size-snapshot/-/rollup-plugin-size-snapshot-0.9.0.tgz"
+  "version" "0.9.0"
   dependencies:
     "acorn" "^6.0.5"
     "bytes" "^3.0.0"
