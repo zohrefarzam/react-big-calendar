@@ -33,7 +33,7 @@ import Dnd from './demos/dnd'
 import DndOutsideSource from './demos/dndOutsideSource'
 import Dropdown from 'react-bootstrap/lib/Dropdown'
 import MenuItem from 'react-bootstrap/lib/MenuItem'
-
+import jalaliLocalizer from '../src/localizers/jalali-moment'
 const globalizeLocalizer = localizer(globalize)
 
 let demoRoot =
@@ -163,7 +163,7 @@ class Example extends React.Component {
             <ExampleControlSlot.Outlet />
           </Card>
           <div className="example">
-            <Current localizer={globalizeLocalizer} />
+            <Current localizer={jalaliLocalizer} />
           </div>
         </div>
         <div className="docs">

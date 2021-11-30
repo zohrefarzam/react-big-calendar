@@ -24,7 +24,7 @@ import defaults from 'lodash/defaults'
 import transform from 'lodash/transform'
 import mapValues from 'lodash/mapValues'
 import { wrapAccessor } from './utils/accessors'
-
+import jalaliLocalizer from './localizers/jalali-moment'
 function viewNames(_views) {
   return !Array.isArray(_views) ? Object.keys(_views) : _views
 }
@@ -903,7 +903,12 @@ class Calendar extends React.Component {
     const msgs = message(messages)
     return {
       viewNames: names,
-      localizer: mergeWithDefaults(localizer, culture, formats, msgs),
+      localizer: mergeWithDefaults(
+        localizer || jalaliLocalizer,
+        culture,
+        formats,
+        msgs
+      ),
       getters: {
         eventProp: (...args) =>
           (eventPropGetter && eventPropGetter(...args)) || {},
