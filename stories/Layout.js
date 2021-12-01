@@ -86,16 +86,16 @@ storiesOf('Layout Issues', module)
       />
     )
   })
-  .add('events on a constrained day column', () => {
-    return (
-      <Calendar
-        defaultView={Views.DAY}
-        min={moment('8 am', 'h a').toDate()}
-        max={moment('5 pm', 'h a').toDate()}
-        events={events}
-      />
-    )
-  })
+  // .add('events on a constrained day column', () => {
+  //   return (
+  //     <Calendar
+  //       defaultView={Views.DAY}
+  //       min={moment('8 am', 'h a').toDate()}
+  //       max={moment('5 pm', 'h a').toDate()}
+  //       events={events}
+  //     />
+  //   )
+  // })
   .add('no duration', () => {
     return (
       /* should display all three events */
