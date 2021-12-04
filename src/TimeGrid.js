@@ -153,7 +153,7 @@ export default class TimeGrid extends Component {
             max={localizer.merge(date, max)}
             resource={resource && id}
             components={components}
-            isNow={localizer.isSameDate(date, now)}
+            isNow={localizer.eq(date, now, 'day')}
             key={i + '-' + jj}
             date={date}
             events={daysEvents}
@@ -205,7 +205,7 @@ export default class TimeGrid extends Component {
         if (
           accessors.allDay(event) ||
           localizer.startAndEndAreDateOnly(eStart, eEnd) ||
-          (!showMultiDayTimes && !localizer.isSameDate(eStart, eEnd))
+          (!showMultiDayTimes && !localizer.eq(eStart, eEnd, 'day'))
         ) {
           allDayEvents.push(event)
         } else {
@@ -221,7 +221,6 @@ export default class TimeGrid extends Component {
     })
 
     allDayEvents.sort((a, b) => sortEvents(a, b, accessors, localizer))
-
     return (
       <div
         className={clsx(

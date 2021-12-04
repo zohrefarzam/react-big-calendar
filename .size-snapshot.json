@@ -22,5 +22,43 @@
         "code": 66700
       }
     }
+  },
+  "dist\\react-big-calendar.js": {
+    "bundled": 765393,
+    "minified": 241869,
+    "gzipped": 75610
+  },
+  "dist\\react-big-calendar.min.js": {
+    "bundled": 693292,
+    "minified": 220054,
+    "gzipped": 69783
+  },
+  "dist\\react-big-calendar.esm.js": {
+    "bundled": 765,
+    "minified": 691,
+    "gzipped": 255,
+    "treeshaked": {
+      "rollup": {
+        "code": 283,
+        "import_statements": 283
+      },
+      "webpack": {
+        "code": 1603
+      }
+    }
+  },
+  "src\\react-big-calendar.esm.js": {
+    "bundled": 765,
+    "minified": 691,
+    "gzipped": 255,
+    "treeshaked": {
+      "rollup": {
+        "code": 283,
+        "import_statements": 283
+      },
+      "webpack": {
+        "code": 1603
+      }
+    }
   }
 }

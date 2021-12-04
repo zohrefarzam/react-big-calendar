@@ -57,7 +57,7 @@ class BackgroundCells extends React.Component {
                   'rbc-day-bg',
                   className,
                   selected && 'rbc-selected-cell',
-                  localizer.isSameDate(date, current) && 'rbc-today',
+                  localizer.eq(date, current, 'day') && 'rbc-today',
                   currentDate &&
                     localizer.neq(currentDate, date, 'month') &&
                     'rbc-off-range-bg'

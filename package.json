@@ -1,6 +1,6 @@
 {
   "name": "jalali-react-calendar",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "Calendar! with events",
   "author": {
     "name": "Jason Quense",
@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "main": "lib/index.js",
-  "module": "dist/react-big-calendar.esm.js",
+  "module": "src/react-big-calendar.esm.js",
   "style": "lib/css/react-big-calendar.css",
   "files": [
     "lib/",
@@ -35,7 +35,7 @@
     "s": "node-sass src/sass/styles.scss ./lib/css/react-big-calendar.css",
     "sass": "yarn s  && yarn sass-dnd",
     "sass-dnd": "node-sass src/addons/dragAndDrop/styles.scss ./lib/addons/dragAndDrop/styles.css",
-    "autoprefixer": "postcss --use autoprefixer -b 'ie >= 10, safari >= 8, last 2 versions' < ./lib/css/react-big/calendar.css | postcss --use autoprefixer -b 'ie >= 10, safari >= 8, last 2 versions' < ./lib/addons/dragAndDrop/styles.css",
+    "autoprefixer": "postcss --use autoprefixer -b \"last 10 versions\" < ./lib/css/react-big/calendar.css | postcss --use autoprefixer -b \"last 10 versions\" < ./lib/addons/dragAndDrop/styles.css",
     "build:css": "yarn sass && yarn autoprefixer",
     "assets": "cpy src/sass/* lib/sass && yarn assets-addons",
     "assets-addons": "cpy addons/**/*.scss ../lib/ --cwd=src --parents",

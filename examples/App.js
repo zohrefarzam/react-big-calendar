@@ -35,7 +35,7 @@ import Dropdown from 'react-bootstrap/lib/Dropdown'
 import MenuItem from 'react-bootstrap/lib/MenuItem'
 import jalaliLocalizer from '../src/localizers/jalali-moment'
 const globalizeLocalizer = localizer(globalize)
-
+const CustomjalaliLocalizer = localizer(jalaliLocalizer)
 let demoRoot =
   'https://github.com/jquense/react-big-calendar/tree/master/examples/demos'
 
@@ -163,7 +163,7 @@ class Example extends React.Component {
             <ExampleControlSlot.Outlet />
           </Card>
           <div className="example">
-            <Current localizer={jalaliLocalizer} />
+            <Current localizer={CustomjalaliLocalizer} />
           </div>
         </div>
         <div className="docs">

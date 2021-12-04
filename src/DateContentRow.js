@@ -66,7 +66,7 @@ class DateContentRow extends React.Component {
       key: `header_${index}`,
       className: clsx(
         'rbc-date-cell',
-        localizer.isSameDate(date, getNow()) && 'rbc-now'
+        localizer.eq(date, getNow(), 'day') && 'rbc-now'
       ),
     })
   }

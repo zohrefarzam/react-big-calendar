@@ -904,7 +904,7 @@ class Calendar extends React.Component {
     return {
       viewNames: names,
       localizer: mergeWithDefaults(
-        localizer || jalaliLocalizer,
+        jalaliLocalizer || localizer,
         culture,
         formats,
         msgs
